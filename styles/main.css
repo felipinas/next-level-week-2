@@ -1,4 +1,4 @@
-:root {
+:root { /*variaveis*/
     --color-background: #F0F0F7;
     --color-primary-lighter: #9871F5;
     --color-primary-light: #916BEA;
@@ -26,7 +26,6 @@
     padding: 0;
     box-sizing: border-box;
 }
-
 body {
     background-color: var(--color-background);
 
@@ -36,12 +35,20 @@ body {
     align-items: center;
     justify-content: center;
 }
-
 body, input, button, textarea {
     font: 500 1.6rem Poppins;
     color: var(--color-text-base);
 }
+
 #container {
     width: 90vw;
     max-width: 700px; /*É o máximo que o container vai pegar, pensando no mobile first*/
+}
+
+@media (min-width: 700px) {
+
+    :root {
+        font-size: 62.5%;
+    }
+
 }
